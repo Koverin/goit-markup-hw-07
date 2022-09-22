@@ -1,0 +1,32 @@
+// Переменные
+@import "./utils/var";
+// Базовые стили
+@import "./base/base";
+// Сброс стилей
+@import "./base/reset";
+// Скрытый заголовок
+@import "./utils/visually-hidden";
+// Контейнер
+@import "./base/container";
+// Все стили
+@import "./components/header";
+// Hero
+@import "./components/hero";
+// Модальное окно
+@import "./components/backdrop";
+// Форма регистрации
+@import "./components/register";
+// Секция организация
+@import "./components/organization";
+// Фото лист
+@import "./components/photo-list";
+// Карточки команды
+@import "./components/team-card";
+// Иконки карточек команды
+@import "./components/icon-team-card";
+// Постоянные клиенты
+@import "./components/clients";
+// Footer
+@import "./components/footer";
+// Footer form
+@import "./components/footer-form";

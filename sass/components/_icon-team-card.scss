@@ -14,16 +14,16 @@
   border-radius: 50%;
 
   transition: background-color var(--timing-function);
-}
 
-.social-networks__link:hover,
-.social-networks__link:focus {
-  background-color: var(--additional-cl);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--additional-cl);
+  }
 
-.social-networks__link:hover .social-networks__icon,
-.social-networks__link:focus .social-networks__icon {
-  fill: var(--main-bg-cl);
+  &:hover .social-networks__icon,
+  &:focus .social-networks__icon {
+    fill: var(--main-bg-cl);
+  }
 }
 
 .social-networks__icon {

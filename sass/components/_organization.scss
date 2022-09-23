@@ -6,10 +6,10 @@
 .section-org__item {
   width: 270px;
   margin-right: 30px;
-}
 
-.section-org__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .box {

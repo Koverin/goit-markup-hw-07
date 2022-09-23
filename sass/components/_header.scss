@@ -23,15 +23,15 @@
   list-style: none;
 }
 
-.list-contact {
+.contact-list {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
-}
 
-.contact-list-item:not(:last-child) {
-  margin-right: 50px;
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .logo-link-text,
@@ -69,6 +69,25 @@
   text-decoration: none;
 
   transition: color var(--timing-function);
+
+  &.current::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--additional-cl);
+    border-radius: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--additional-cl);
+  }
 }
 
 .list .link.current {
@@ -79,33 +98,9 @@
   position: relative;
 }
 
-.link.current::after {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--additional-cl);
-  border-radius: 2px;
-}
-
-.link:hover,
-.link:focus {
+.list .link.current {
   color: var(--additional-cl);
-}
-
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--additional-cl);
-}
-
-.contact-link:hover .contact-icon,
-.contact-link:focus .contact-icon {
-  fill: var(--additional-cl);
+  position: relative;
 }
 
 .contact-link {
@@ -123,6 +118,16 @@
   color: var(--subtext-color);
 
   transition: color var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--additional-cl);
+  }
+
+  &:hover .contact-icon,
+  &:focus .contact-icon {
+    fill: var(--additional-cl);
+  }
 }
 
 .contact-icon {

@@ -20,11 +20,10 @@
 .register-label {
   position: relative;
   display: block;
-  /* margin-bottom: 28px; */
-}
 
-.register-label:not(:last-child) {
-  margin-bottom: 28px;
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
 }
 
 .register-suptitle {
@@ -55,10 +54,14 @@
   border-radius: 4px;
 
   transition: border-color var(--timing-function);
-}
 
-.register-input:focus {
-  border-color: var(--additional-cl);
+  &:focus {
+    border-color: var(--additional-cl);
+  }
+
+  &:focus + .register-icon {
+    fill: var(--additional-cl);
+  }
 }
 
 .register-icon {
@@ -68,10 +71,6 @@
 
   transform: translateY(-50%);
   transition: fill var(--timing-function);
-}
-
-.register-input:focus + .register-icon {
-  fill: var(--additional-cl);
 }
 
 .register-comment {
@@ -86,17 +85,21 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--timing-function);
-}
 
-.register-comment::placeholder {
-  font-family: var(--Roboro-txt);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+  &::placeholder {
+    font-family: var(--Roboro-txt);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    border-color: var(--additional-cl);
+  }
 }
 
 .register-comment-suptitle {
@@ -114,10 +117,6 @@
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--subtext-color);
-}
-
-.register-comment:focus {
-  border-color: var(--additional-cl);
 }
 
 .register-form-checkbox {

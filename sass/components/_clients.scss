@@ -31,16 +31,6 @@
   height: 92px;
 }
 
-.client-link:hover,
-.client-link:focus {
-  border-color: var(--additional-cl);
-}
-
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
-  fill: var(--additional-cl);
-}
-
 .client-link {
   display: flex;
   align-items: center;
@@ -51,6 +41,16 @@
   border-radius: 4px;
 
   transition: border var(--timing-function);
+
+  &-link:hover,
+  &-link:focus {
+    border-color: var(--additional-cl);
+  }
+
+  &-link:hover .client-icon,
+  &-link:focus .client-icon {
+    fill: var(--additional-cl);
+  }
 }
 
 .client-icon {

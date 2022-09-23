@@ -16,6 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,14 +34,14 @@
               <a class="link" href="./index.html">Студія</a>
             </li>
             <li class="nav-list-item">
-              <a class="link carrent" href="./portfolio.html"> Портфоліо</a>
+              <a class="link current" href="./portfolio.html"> Портфоліо</a>
             </li>
             <li class="nav-list-item">
               <a class="link" href="#"> Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="list list-contact">
+        <ul class="list contact-list">
           <li class="contact-list-item">
             <a class="contact-link" href="mailto:info@devstudio.com">
               <svg class="contact-icon" width="16" height="16">
@@ -65,7 +66,7 @@
       <section class="section-port">
         <div class="conteiner">
           <h1 class="section-port__title visually-hidden">Filter</h1>
-          <ul class="list list-port">
+          <ul class="list port-list">
             <li class="port-item">
               <button class="btn" type="button">Усі</button>
             </li>
@@ -413,11 +414,13 @@
                   placeholder="E-mail"
                 />
               </label>
-              <button class="footer-form-btn" type="submit">Підписатися</button>
+              <button class="footer-form-btn" type="submit">
+                Підписатися
+                <svg class="footer-form-icon" width="24" height="24">
+                  <use href="./images/icon.svg#icon-icon-send"></use>
+                </svg>
+              </button>
             </div>
-            <svg class="footer-form-icon" width="24" height="24">
-              <use href="./images/icon.svg#icon-icon-send"></use>
-            </svg>
           </form>
         </div>
       </div>

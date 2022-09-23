@@ -815,10 +815,14 @@ textarea {
   -webkit-transition: border var(--timing-function);
   transition: border var(--timing-function);
 }
-.client-link-link:hover, .client-link-link:focus {
+
+.client-link:hover,
+.client-link:focus {
   border-color: var(--additional-cl);
 }
-.client-link-link:hover .client-icon, .client-link-link:focus .client-icon {
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--additional-cl);
 }
 

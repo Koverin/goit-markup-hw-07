@@ -1,16 +1,17 @@
-.port-list {
+.section-port__list {
   display: flex;
+  justify-content: center;
+
   margin-top: 0;
   margin-bottom: 0;
   margin-bottom: 34px;
-  justify-content: center;
 }
 
-.port-item:not(:last-child) {
+.section-port__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.btn {
+.section-port__btn {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;

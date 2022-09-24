@@ -1,4 +1,4 @@
-.register-title {
+.registration__title {
   display: block;
   align-items: center;
 
@@ -13,11 +13,11 @@
   color: var(--text-color);
 }
 
-.register-group {
+.registration__group {
   margin-bottom: 28px;
 }
 
-.register-label {
+.registration__label {
   position: relative;
   display: block;
 
@@ -26,7 +26,7 @@
   }
 }
 
-.register-suptitle {
+.registration__suptitle {
   position: absolute;
   top: -10px;
   left: 0;
@@ -43,7 +43,7 @@
   color: var(--subtext-color);
 }
 
-.register-input {
+.registration__input {
   width: 100%;
   height: 40px;
   padding: 0;
@@ -59,12 +59,12 @@
     border-color: var(--additional-cl);
   }
 
-  &:focus + .register-icon {
+  &:focus + .registration__icon {
     fill: var(--additional-cl);
   }
 }
 
-.register-icon {
+.registration__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -73,7 +73,7 @@
   transition: fill var(--timing-function);
 }
 
-.register-comment {
+.registration__comment {
   display: block;
   width: 100%;
   height: 120px;
@@ -102,24 +102,7 @@
   }
 }
 
-.register-comment-suptitle {
-  position: absolute;
-  top: -10px;
-  left: 0;
-  transform: translateY(-50%);
-
-  display: block;
-
-  font-family: var(--Roboro-txt);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
-  color: var(--subtext-color);
-}
-
-.register-form-checkbox {
+.checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,28 +111,28 @@
   margin-bottom: 30px;
 }
 
-.icon-unchecked {
+.checkbox--unchecked {
   fill: var(--text-color);
 }
 
-.icon-checked {
+.checkbox--checked {
   opacity: 0;
   transition: opacity var(--timing-function);
 }
 
-.register-checkbox:checked + .register-icon-checkbox .icon-checked {
+.checkbox__input:checked + .checkbox__icon .checkbox--checked {
   opacity: 1;
 }
 
-.icon-unchecked {
+.checkbox--unchecked {
   opacity: 1;
   transition: opacity var(--timing-function);
 }
-.register-checkbox:checked + .register-icon-checkbox .icon-unchecked {
+.checkbox__input:checked + .checkbox__icon .checkbox--unchecked {
   opacity: 0;
 }
 
-.checkbox-title {
+.checkbox__title {
   font-family: var(--Roboro-txt);
   font-style: normal;
   font-weight: 400;
@@ -161,21 +144,13 @@
   user-select: none;
 }
 
-.checkbox-link {
+.checkbox__link {
   color: var(--additional-cl);
 }
 
-.register-btn {
+.button {
   display: block;
   margin: 0 auto;
   padding: 10px 52px;
   min-width: 200px;
-}
-
-input {
-  outline: transparent;
-}
-
-textarea {
-  resize: none;
 }

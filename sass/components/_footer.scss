@@ -1,6 +1,11 @@
 .footer-conteiner {
   display: flex;
   align-items: baseline;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .box-address {
@@ -32,13 +37,6 @@
 .footer-link:hover,
 .footer-link:focus {
   color: var(--additional-cl);
-}
-
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .logo-text {

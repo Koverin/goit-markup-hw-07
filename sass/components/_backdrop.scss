@@ -17,7 +17,7 @@
   }
 }
 
-.modal {
+.backdrop__modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,7 +32,7 @@
   border-radius: 4px;
 }
 
-.modal-btn {
+.backdrop__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -50,8 +50,8 @@
   transition: fill var(--timing-function);
   outline: transparent;
 
-  &-btn:hover,
-  &-btn:focus {
+  &:hover,
+  &:focus {
     fill: var(--additional-cl);
   }
 }

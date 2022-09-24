@@ -10,32 +10,13 @@
   display: flex;
 }
 
-.header__nav {
+.navigation {
   margin-right: auto;
   display: flex;
 }
 
-.list-nav {
-  display: flex;
-  gap: 50px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.contact-list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  &-item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-.logo-link-text,
-.logo-link {
+.navigation__link,
+.navigation__text {
   padding-top: 24px;
   padding-bottom: 25px;
   font-family: var(--Raleway-txt);
@@ -45,18 +26,26 @@
   text-decoration: none;
 }
 
-.logo-link {
+.navigation__text {
   color: var(--additional-cl);
 }
 
-.logo-link-text {
+.navigation__link {
   display: block;
   margin-right: 93px;
   width: 145px;
   color: var(--logo-text-cl);
 }
 
-.link {
+.pages {
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pages__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -70,7 +59,7 @@
 
   transition: color var(--timing-function);
 
-  &.current::after {
+  &--current::after {
     content: "";
 
     position: absolute;
@@ -90,20 +79,23 @@
   }
 }
 
-.list .link.current {
-  color: var(--additional-cl);
-}
-
-.link.current {
-  position: relative;
-}
-
-.list .link.current {
+.pages__link--current {
   color: var(--additional-cl);
   position: relative;
 }
 
-.contact-link {
+.contacts {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contacts__link {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -124,13 +116,13 @@
     color: var(--additional-cl);
   }
 
-  &:hover .contact-icon,
-  &:focus .contact-icon {
+  &:hover .contacts__icon,
+  &:focus .contacts__icon {
     fill: var(--additional-cl);
   }
 }
 
-.contact-icon {
+.contacts__icon {
   fill: var(--subtext-color);
 
   transition: fill var(--timing-function);

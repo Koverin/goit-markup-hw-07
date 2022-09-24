@@ -75,33 +75,11 @@ textarea {
   display: flex;
 }
 
-.navigation {
+.header__nav {
   margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.navigation__link,
-.navigation__text {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  font-family: var(--Raleway-txt);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
-  text-decoration: none;
-}
-
-.navigation__text {
-  color: var(--additional-cl);
-}
-
-.navigation__link {
-  display: block;
-  margin-right: 93px;
-  width: 145px;
-  color: var(--logo-text-cl);
 }
 
 .pages {
@@ -191,6 +169,32 @@ textarea {
   fill: var(--subtext-color);
   -webkit-transition: fill var(--timing-function);
   transition: fill var(--timing-function);
+}
+
+.logo,
+.logo__text {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: var(--Raleway-txt);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1923076923;
+  text-decoration: none;
+}
+
+.logo__text {
+  color: var(--additional-cl);
+}
+
+.logo {
+  display: block;
+  margin-right: 93px;
+  width: 145px;
+  color: var(--logo-text-cl);
+}
+
+.header__logo {
+  color: #ffffff;
 }
 
 .section {

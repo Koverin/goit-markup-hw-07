@@ -10,31 +10,9 @@
   display: flex;
 }
 
-.navigation {
+.header__nav {
   margin-right: auto;
   display: flex;
-}
-
-.navigation__link,
-.navigation__text {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  font-family: var(--Raleway-txt);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  text-decoration: none;
-}
-
-.navigation__text {
-  color: var(--additional-cl);
-}
-
-.navigation__link {
-  display: block;
-  margin-right: 93px;
-  width: 145px;
-  color: var(--logo-text-cl);
 }
 
 .pages {
